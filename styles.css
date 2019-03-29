@@ -132,3 +132,13 @@ body {
     left: 0%;
   }
 }
+
+/* Seperate master timeline and boday timelins */
+    .master_timeline {
+        float: left; 
+        width: 10%;
+    }
+    .body_timeline {
+        float: left;
+        width: 90%;
+    }
