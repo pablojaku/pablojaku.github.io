@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
 </head>
 
 <body>
@@ -211,18 +212,29 @@
       document.getElementById("demo").innerHTML = "Paragraph changed.";
     }
     personalTimelineWidth();
+    hideContent();
+
+
     function personalTimelineWidth() {
       //per person timeline CSS width configurations
       var x = document.getElementsByClassName("pt");
       for (i = 0; i < x.length; i++) {
-        console.log(x[i].style.width);
         var y = 100 / x.length;
         y = y + '%';
         x[i].style.width = y;
         console.log(y);
       }
-
     }
+
+    function hideContent() {
+      //all nodes should be closed
+      var x = $(".content");
+      for (i = 0; i < x.length; i++) {
+        //https://stackoverflow.com/questions/49314884/elementindex-addclass-does-not-work
+        x.eq(i).addClass("hidden");
+      }
+    }
+
   </script>
 
 </body>
