@@ -27,6 +27,8 @@ body {
   margin-left: -3px;
 }
 
+/*Each container will be one day and therefore one event if present in the personal time line*/
+/*Master timeline will have a line every five days*/
 /* Container around content */
 .container {
   padding: 10px 40px;
@@ -152,4 +154,10 @@ body {
   /*if wanna hide an element, add this class to it*/
   .hidden {
     display: none;
+  }
+
+  /* pt class for the per person timeline */
+  .pt {
+    float: right;
+    width: 33%;
   }
