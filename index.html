@@ -3,13 +3,15 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <div class="top_container">
     top_container
   </div>
+
+
   <!-- All timelines are inside this body -->
   <!--testing vscode git commit-->
   <div>
@@ -17,111 +19,8 @@
     <!--This is the master column-->
     <div class="master_timeline">
       <div class="master timeline">
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
 
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
 
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-
-        <div class="container left">
-          <div class="content hidden">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -208,11 +107,29 @@
 
   <!--JavaScript Functionality-->
   <script>
+
+    // PREP
+    // Returns an array of dates between the two dates
+    var getDates = function (startDate, endDate) {
+      var dates = [],
+        currentDate = startDate,
+        addDays = function (days) {
+          var date = new Date(this.valueOf());
+          date.setDate(date.getDate() + days);
+          return date;
+        };
+      while (currentDate <= endDate) {
+        dates.push(currentDate);
+        currentDate = addDays.call(currentDate, 1);
+      }
+      return dates;
+    };
+
+    // FUNCTIONS DEFINITIONS
     function myFunction() {
       document.getElementById("demo").innerHTML = "Paragraph changed.";
     }
-    personalTimelineWidth();
-    hideContent();
+
 
 
     function personalTimelineWidth() {
@@ -234,6 +151,49 @@
         x.eq(i).addClass("hidden");
       }
     }
+
+    function starterNodes(){
+      // html code template
+      var container = document.createElement('div');
+      container.className = 'container left';
+      container.innerHTML = '<div class="content hidden">\
+            <h2>2017</h2>\
+            <p>Lorem ipsum..</p>\
+          </div>';
+
+      var mt = document.getElementsByClassName('master timeline');
+
+      
+      console.log(mt);
+      mt.appendChild(container);
+
+      
+
+    }
+
+
+
+    //
+
+    // PROGRAMMING STARTS
+
+
+    // set up the date range (which is the range for the whole timeline)
+    // each day will be one entry on the array
+    var dates = getDates(new Date(2016, 4, 9), new Date(2016, 6, 9));
+    dates.forEach(function (date) {
+      console.log(date);
+    });
+    console.log(dates[31].getDate());
+
+
+
+
+
+    personalTimelineWidth();
+    //hideContent();
+    starterNodes();
+
 
   </script>
 
