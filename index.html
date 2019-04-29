@@ -125,6 +125,9 @@
       return dates;
     };
 
+    // Array for month strings
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
     // FUNCTIONS DEFINITIONS
     function myFunction() {
       document.getElementById("demo").innerHTML = "Paragraph changed.";
@@ -152,21 +155,25 @@
       }
     }
 
-    function starterNodes(){
-      // html code template
-      var container = document.createElement('div');
-      container.className = 'container left';
-      container.innerHTML = '<div class="content hidden">\
-            <h2>2017</h2>\
-            <p>Lorem ipsum..</p>\
-          </div>';
+    function starterNodes(dates){
 
-      var mt = document.getElementsByClassName('master timeline');
+      // go through all the dates
+      dates.forEach(function (date) {
+        // html code template
+        var container = document.createElement('div');
+        container.className = 'container left';
+        container.innerHTML = '<div class="content hidden">\
+              <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
+              <p>Lorem ipsum..</p>\
+            </div>';
+        var mt = document.getElementsByClassName('master timeline');
+        console.log(monthNames[date.getMonth()]);
+        mt[0].appendChild(container);
 
-      
-      console.log(mt);
-      mt.addChild(container);
+      });
 
+
+ 
       
 
     }
@@ -192,7 +199,7 @@
 
     personalTimelineWidth();
     //hideContent();
-    starterNodes();
+    starterNodes(dates);
 
 
   </script>
