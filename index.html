@@ -162,9 +162,8 @@
         // html code template
         var container = document.createElement('div');
         container.className = 'container left';
-        container.innerHTML = '<div class="content hidden">\
-              <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
-              <p>Lorem ipsum..</p>\
+        container.innerHTML = '<div class="content">\
+            <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
             </div>';
         var mt = document.getElementsByClassName('master timeline');
         console.log(monthNames[date.getMonth()]);
