@@ -11,6 +11,13 @@ h1 {
 .navigation {
     background-color: white;
     color: red;
+    height: 50px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 ul {
