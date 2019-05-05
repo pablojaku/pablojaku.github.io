@@ -1,11 +1,27 @@
+body {
+    background-color: #00457c;
+}
 
-body {background-color: #00457c;}
-
-h1 {color: #e8d4a2;}
+h1 {
+    color: #e8d4a2;
+}
 
 /*building the top navigation bar*/
+
 .navigation {
     background-color: white;
     color: red;
+}
 
+ul {
+    list-style-type: none;
+}
+
+li {  display: inline;
+    border-right: 1px solid #bbb;}
+
+
+li a:hover {
+    background-color: #555;
+    color: white;
 }
