@@ -11,7 +11,7 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><a href="/index.html">index</a></li>
+                <li><a href="/home.html">Home</a></li>
                 <li><a href="/class_1.html">class 1</a></li>
                 <li><a href="/index.html">index</a></li>
                 <li><a href="/index.html">index</a></li>
@@ -19,31 +19,38 @@
         </nav>
     </div>
     <h1>Welcome to the Class 2 Page</h1>
+    <h2>This class is about HTML</h2>
+
     Here is where student can submit comments on their classes and their fellow students can vote on those comments.
-    <br>
-    This class is about HTML
     <!--building the comment submission form-->
-    <div class="submission_form">
-
-
+    <div class="submission_form box">
+        <form>
+            <textarea name="text_comment">
+                        Please provide your comments here:
+                        </textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
-
-    <!-- building the comment box -->
-    <div class="comment_box">
-        <!-- this is where the comment is presented -->
-        <div class="comment_view">
-            a
-        </div>
-
-        <!-- bottom bar with the up / down vote -->
-        <div class="comment_bottom">
-            <div class="upvote">
-                1111
-                <button type="button">Click UP!</button>
+    These are the comments made by your fellow students
+    <!-- comments section-->
+    <div id="all_comments">
+        <!-- building the comment box -->
+        <div class="comment_box box">
+            <!-- this is where the comment is presented -->
+            <div class="comment_view">
+                a
             </div>
-            <div class="downvote">
-                666
-                <button type="button">Click DOWN!</button>
+
+            <!-- bottom bar with the up / down vote -->
+            <div class="comment_bottom">
+                <div class="upvote">
+                    1111
+                    <button type="button">Click UP!</button>
+                </div>
+                <div class="downvote">
+                    666
+                    <button type="button">Click DOWN!</button>
+                </div>
             </div>
         </div>
 
@@ -53,9 +60,9 @@
     <script>
         //FUNCTIONS
         function makeComment() {
-            
+
             var container = document.createElement('div');
-            container.className = 'comment_box';
+            container.className = 'comment_box box';
             container.innerHTML = '<!-- this is where the comment is presented -->\
         <div class="comment_view">\
             a\
@@ -72,25 +79,24 @@
             </div>\
         </div>'
 
-        var body = document.getElementById('body');
-        body.appendChild(container);
+            var body = document.getElementById('all_comments');
+            body.appendChild(container);
 
 
-/*
-            var container = document.createElement('div');
-        container.className = 'container left';
-        container.innerHTML = '<div class="content">\
-            <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
-            </div>';
-        var mt = document.getElementsByClassName('master timeline');
-        console.log(monthNames[date.getMonth()]);
-        mt[0].appendChild(container);
-*/
+            /*
+                        var container = document.createElement('div');
+                    container.className = 'container left';
+                    container.innerHTML = '<div class="content">\
+                        <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
+                        </div>';
+                    var mt = document.getElementsByClassName('master timeline');
+                    console.log(monthNames[date.getMonth()]);
+                    mt[0].appendChild(container);
+            */
         }
 
         // run the functions
         makeComment();
-
     </script>
 </body>
 

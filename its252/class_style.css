@@ -17,6 +17,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 ul {
@@ -35,7 +36,7 @@ li a:hover {
 
 /* building the comment box */
 
-.comment_box {
+.box {
     position: relative;
     border-style: ridge;
     height: 20%;
@@ -71,4 +72,17 @@ li a:hover {
     position: relative;
     float: right;
     color: red;
+}
+
+/* form styling */
+textarea {
+    width: 80%;
+    height: 80%;
+}
+
+input[type=submit]{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
 }
