@@ -10,14 +10,16 @@ h1 {
 h2 {
     color: red;
 }
- h6 { font-size: 15px;
-color: white;}
 
+h6 {
+    font-size: 15px;
+    color: white;
+}
 
 /*building the top navigation bar*/
 
 .navigation {
-    background-color: white;
+    background-color: #e8d4a2;
     color: red;
     height: 50px;
     font-size: 20px;
@@ -25,6 +27,13 @@ color: white;}
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -94,6 +103,7 @@ input[type=submit] {
 }
 
 /*for top comments*/
+
 .top_comment_bottom {
     color: red;
 }
