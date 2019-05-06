@@ -7,8 +7,6 @@ h1 {
     text-align: center;
 }
 
-
-
 /*building the top navigation bar*/
 
 .navigation {
@@ -16,24 +14,45 @@ h1 {
     color: red;
     height: 50px;
     font-size: 20px;
-
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 }
 
 ul {
     list-style-type: none;
 }
 
-li {  display: inline;
-    border-right: 1px solid #bbb;}
-
+li {
+    display: inline;
+    border-right: 1px solid #bbb;
+}
 
 li a:hover {
     background-color: #555;
     color: white;
 }
 
-/* building the comment view */
+/* building the comment box */
+
+.comment_box {
+    position: relative;
+    border-style: ridge;
+    height: 20%;
+    margin: 2.5% 5%;
+    background-color: #e8d4a2;
+}
+
+.comment_view {
+    position: absolute;
+    top: 0;
+    height: 70%;
+}
+
+.comment_bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 20%;
+}
