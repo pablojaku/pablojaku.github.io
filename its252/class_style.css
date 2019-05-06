@@ -42,7 +42,6 @@ li a:hover {
     height: 20%;
     margin: 2.5% 5%;
     background-color: #e8d4a2;
-    
 }
 
 .comment_view {
@@ -51,7 +50,7 @@ li a:hover {
     height: 70%;
     overflow: auto;
     width: 100%;
-    color:  #00457c;
+    color: #00457c;
 }
 
 .comment_bottom {
@@ -75,14 +74,14 @@ li a:hover {
 }
 
 /* form styling */
+
 textarea {
     width: 80%;
     height: 80%;
 }
 
-input[type=submit]{
+input[type=submit] {
     position: absolute;
     right: 0;
     bottom: 0;
-    
 }
