@@ -92,3 +92,8 @@ input[type=submit] {
     right: 0;
     bottom: 0;
 }
+
+/*for top comments*/
+.top_comment_bottom {
+    color: red;
+}
