@@ -2,7 +2,9 @@
 <header>
     <title>Class 1 Comments</title>
     <link href="class_style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </header>
+
 
 <body>
     <!--building the top navigation bar-->
@@ -18,7 +20,27 @@
     </div>
     <h1>Welcome to the Class 1 Page</h1>
     Here is where student can submit comments on their classes and their fellow students can vote on those comments.
+    <br>
+    This class is about HTML
+    <!--building the comment submission form-->
+    <div class="submission_form">
 
+
+    </div>
+
+    <!-- building the comment view -->
+    <div class="comment_view">
+        
+    </div>
+
+    <!--JavaScript functionalities-->
+    <script src="file:.\data.json"></script>
+    <script>
+        var data = $.getJSON("DATA.json");
+        //var mydata = JSON.parse(data);
+        console.log(data.lenght);
+        //conosole.log(mydata[0].lastName);
+    </script>
 </body>
 
 </html>

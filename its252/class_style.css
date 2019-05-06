@@ -4,7 +4,10 @@ body {
 
 h1 {
     color: #e8d4a2;
+    text-align: center;
 }
+
+
 
 /*building the top navigation bar*/
 
@@ -32,3 +35,5 @@ li a:hover {
     background-color: #555;
     color: white;
 }
+
+/* building the comment view */
