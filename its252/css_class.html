@@ -1,6 +1,6 @@
 <html>
 <header>
-    <title>HTML Class Comments</title>
+    <title>CSS Class Comments</title>
     <link href="class_style.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </header>
@@ -12,16 +12,16 @@
         <nav>
             <ul>
                 <li><a href="./home.html">Home</a></li>
+                <li><a href="./html_class.html">html class</a></li>
                 <li><a href="./js_class.html">js class</a></li>
-                <li><a href="./css_class.html">css class</a></li>
                 <li><a href="./top_comments.html">top comments</a></li>
                 <li><a href="./website_comments.html">website comments</a></li>
             </ul>
         </nav>
     </div>
-    <h1>Welcome to the HTML Class</h1>
-    <h2>This class is about HTML</h2>
-    <h3>Teacher: El Maestro</h3>
+    <h1>Welcome to the CSS Class</h1>
+    <h2>This class is about CSS</h2>
+    <h3>Teacher: &#176; &#176; | |</h3>
     <br>
     <br>
     <h6>Here is where student can submit comments on their classes and their fellow students can vote on those comments.
@@ -31,7 +31,7 @@
         <form>
             <textarea name="text_comment">
                         Please provide your comments here:
-            </textarea>
+                        </textarea>
             <div class="commenters_name">
                 What is your name?
                 <input type="text" name="name">
@@ -46,7 +46,7 @@
         <div class="comment_box box">
             <!-- this is where the comment is presented -->
             <div class="comment_view">
-                This class is great
+                colors for you and you
             </div>
             <div class="commenters_name">
                 Name: John Doe
@@ -76,7 +76,7 @@
             container.className = 'comment_box box';
             container.innerHTML = '<!-- this is where the comment is presented -->\
         <div class="comment_view">\
-            This class is okay\
+            a\
         </div>\
         <div class="commenters_name">\
                 Name: John Doe\
@@ -96,17 +96,6 @@
             var body = document.getElementById('all_comments');
             body.appendChild(container);
 
-
-            /*
-                        var container = document.createElement('div');
-                    container.className = 'container left';
-                    container.innerHTML = '<div class="content">\
-                        <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
-                        </div>';
-                    var mt = document.getElementsByClassName('master timeline');
-                    console.log(monthNames[date.getMonth()]);
-                    mt[0].appendChild(container);
-            */
         }
 
         // run the functions

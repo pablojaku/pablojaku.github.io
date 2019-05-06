@@ -21,7 +21,9 @@
     </div>
     <h1>Welcome to the JavaScript Class</h1>
     <h2>This class is about JavaScript</h2>
-
+    <h3>Teacher: der Lehrer</h3>
+    <br>
+    <br>
     <h6>Here is where student can submit comments on their classes and their fellow students can vote on those comments.
     </h6>
     <!--building the comment submission form-->
@@ -30,6 +32,10 @@
             <textarea name="text_comment">
                         Please provide your comments here:
                         </textarea>
+            <div class="commenters_name">
+                What is your name?
+                <input type="text" name="name">
+            </div>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -42,6 +48,9 @@
             <div class="comment_view">
                 lali lali la
             </div>
+            <div class="commenters_name">
+                Name: John Doe
+            </div>
 
             <!-- bottom bar with the up / down vote -->
             <div class="comment_bottom">
@@ -50,7 +59,7 @@
                     <button type="button">Click UP!</button>
                 </div>
                 <div class="downvote">
-                    666
+                    555
                     <button type="button">Click DOWN!</button>
                 </div>
             </div>
@@ -69,6 +78,9 @@
         <div class="comment_view">\
             a\
         </div>\
+        <div class="commenters_name">\
+                Name: John Doe\
+            </div>\
         <!-- bottom bar with the up / down vote -->\
         <div class="comment_bottom">\
             <div class="upvote">\
@@ -76,7 +88,7 @@
                 <button type="button">Click UP!</button>\
             </div>\
             <div class="downvote">\
-                666\
+                555\
                 <button type="button">Click DOWN!</button>\
             </div>\
         </div>'

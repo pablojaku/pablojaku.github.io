@@ -11,24 +11,30 @@
     <div class="navigation">
         <nav>
             <ul>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/html_class.html">html class</a></li>
-                <li><a href="/js_class.html">js class</a></li>
-                <li><a href="/css_class.html">css class</a></li>
-                <li><a href="/top_comments.html">top comments</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./html_class.html">html class</a></li>
+                <li><a href="./js_class.html">js class</a></li>
+                <li><a href="./css_class.html">css class</a></li>
+                <li><a href="./top_comments.html">top comments</a></li>
             </ul>
         </nav>
     </div>
     <h1>Welcome to the Website Comments Page</h1>
     <h2>Please drops comments about this website</h2>
-
-    <h6>Here is where student can submit comments on this website and their fellow students can vote on those comments.</h6>
+    <br>
+    <br>
+    <h6>Here is where student can submit comments on this website and their fellow students can vote on those comments.
+    </h6>
     <!--building the comment submission form-->
     <div class="submission_form box">
         <form>
             <textarea name="text_comment">
                         Please provide your comments here:
                         </textarea>
+            <div class="commenters_name">
+                What is your name?
+                <input type="text" name="name">
+            </div>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -41,7 +47,9 @@
             <div class="comment_view">
                 This website is awesome!!
             </div>
-
+            <div class="commenters_name">
+                Name: John Doe
+            </div>
             <!-- bottom bar with the up / down vote -->
             <div class="comment_bottom">
                 <div class="upvote">
@@ -49,7 +57,7 @@
                     <button type="button">Click UP!</button>
                 </div>
                 <div class="downvote">
-                    666
+                    555
                     <button type="button">Click DOWN!</button>
                 </div>
             </div>
@@ -68,6 +76,9 @@
         <div class="comment_view">\
             a\
         </div>\
+        <div class="commenters_name">\
+                Name: John Doe\
+            </div>\
         <!-- bottom bar with the up / down vote -->\
         <div class="comment_bottom">\
             <div class="upvote">\
@@ -75,7 +86,7 @@
                 <button type="button">Click UP!</button>\
             </div>\
             <div class="downvote">\
-                666\
+                555\
                 <button type="button">Click DOWN!</button>\
             </div>\
         </div>'
