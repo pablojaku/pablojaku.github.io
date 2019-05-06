@@ -1,0 +1,97 @@
+<html>
+<header>
+    <title>Class 2 Comments</title>
+    <link href="class_style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</header>
+
+
+<body id="body">
+    <!--building the top navigation bar-->
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="/index.html">index</a></li>
+                <li><a href="/class_1.html">class 1</a></li>
+                <li><a href="/index.html">index</a></li>
+                <li><a href="/index.html">index</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Welcome to the Class 2 Page</h1>
+    Here is where student can submit comments on their classes and their fellow students can vote on those comments.
+    <br>
+    This class is about HTML
+    <!--building the comment submission form-->
+    <div class="submission_form">
+
+
+    </div>
+
+    <!-- building the comment box -->
+    <div class="comment_box">
+        <!-- this is where the comment is presented -->
+        <div class="comment_view">
+            a
+        </div>
+
+        <!-- bottom bar with the up / down vote -->
+        <div class="comment_bottom">
+            <div class="upvote">
+                1111
+                <button type="button">Click UP!</button>
+            </div>
+            <div class="downvote">
+                666
+                <button type="button">Click DOWN!</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--JavaScript functionalities-->
+    <script>
+        //FUNCTIONS
+        function makeComment() {
+            
+            var container = document.createElement('div');
+            container.className = 'comment_box';
+            container.innerHTML = '<!-- this is where the comment is presented -->\
+        <div class="comment_view">\
+            a\
+        </div>\
+        <!-- bottom bar with the up / down vote -->\
+        <div class="comment_bottom">\
+            <div class="upvote">\
+                1111\
+                <button type="button">Click UP!</button>\
+            </div>\
+            <div class="downvote">\
+                666\
+                <button type="button">Click DOWN!</button>\
+            </div>\
+        </div>'
+
+        var body = document.getElementById('body');
+        body.appendChild(container);
+
+
+/*
+            var container = document.createElement('div');
+        container.className = 'container left';
+        container.innerHTML = '<div class="content">\
+            <h2> ' + monthNames[date.getMonth()] + ' - ' + date.getDate() + ' - ' + date.getFullYear() + ' </h2>\
+            </div>';
+        var mt = document.getElementsByClassName('master timeline');
+        console.log(monthNames[date.getMonth()]);
+        mt[0].appendChild(container);
+*/
+        }
+
+        // run the functions
+        makeComment();
+
+    </script>
+</body>
+
+</html>

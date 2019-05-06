@@ -41,18 +41,34 @@ li a:hover {
     height: 20%;
     margin: 2.5% 5%;
     background-color: #e8d4a2;
+    
 }
 
 .comment_view {
     position: absolute;
     top: 0;
     height: 70%;
+    overflow: auto;
+    width: 100%;
+    color:  #00457c;
 }
 
 .comment_bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     right: 0;
     width: 50%;
     height: 20%;
+}
+
+.upvote {
+    position: relative;
+    float: left;
+    color: green;
+}
+
+.downvote {
+    position: relative;
+    float: right;
+    color: red;
 }
