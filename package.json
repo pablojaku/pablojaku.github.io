@@ -1,25 +1,25 @@
 {
-  "name": "suddi.github.io",
+  "name": "pablojaku.github.io",
   "private": true,
-  "description": "Sudharshan Ravindran personal site",
-  "version": "1.2.2",
-  "homepage": "https://suddi.github.io",
+  "description": "Pablo Jakubowicz Resume Site",
+  "version": "1.0.0",
+  "homepage": "https://pablojaku.github.io",
   "author": {
-    "name": "Sudharshan Ravindran",
-    "email": "suddi@mail.io",
-    "url": "https://suddi.github.io"
+    "name": "Pablo Jakubowicz",
+    "email": "pablojaku@gmail.com",
+    "url": "https://pablojaku.github.io"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/suddi/suddi.github.io"
+    "url": "https://github.com/pablojaku/pablojaku.github.io"
   },
   "bugs": {
-    "url": "https://github.com/suddi/suddi.github.io/issues"
+    "url": "https://github.com/pablojaku/pablojaku.github.io/issues"
   },
   "licenses": [
     {
       "type": "Apache-2.0",
-      "url": "https://github.com/suddi/suddi.github.io/LICENSE"
+      "url": "https://github.com/pablojaku/pablojaku.github.io/LICENSE"
     }
   ],
   "engines": {
@@ -45,6 +45,7 @@
     "eslint": "^4.0.0",
     "eslint-config-suddi": "^4.0.0",
     "eslint-plugin-react": "^7.0.0",
+    "gh-pages": "^2.2.0",
     "husky": "^0.14.0",
     "moment": "^2.19.4",
     "nsp": "^2.0.0",
